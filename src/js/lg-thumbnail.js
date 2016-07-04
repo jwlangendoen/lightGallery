@@ -201,6 +201,7 @@
 
         $thumb.on('click.lg touchend.lg', function() {
             var _$this = $(this);
+			_this.core.$outer.toggleClass('lg-thumb-open');
             setTimeout(function() {
 
                 // In IE9 and bellow touch does not support

@@ -1,4 +1,4 @@
-/*! lightgallery - v1.2.21 - 2016-06-28
+/*! lightgallery - v1.2.21 - 2016-07-04
 * http://sachinchoolur.github.io/lightGallery/
 * Copyright (c) 2016 Sachin N; Licensed Apache 2.0 */
 (function($, window, document, undefined) {
@@ -204,6 +204,7 @@
 
         $thumb.on('click.lg touchend.lg', function() {
             var _$this = $(this);
+			_this.core.$outer.toggleClass('lg-thumb-open');
             setTimeout(function() {
 
                 // In IE9 and bellow touch does not support
